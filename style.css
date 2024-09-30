@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(90deg, rgb(138, 249, 253), rgb(142, 131, 241));
+}
+
+.popup{
+    border-radius: 30px;
+    text-align: center;
+    width: 400px;
+    background: #b2d2ff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1); 
+    padding: 0 20px 20px;
+    color: #333;
+    z-index: 99;
+    box-shadow: 5px 5px 5px rgba(58, 58, 58, 0.5);
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.popup img{
+    height: 100px;
+    margin-top: -50px;
+    border-radius: 50px;
+}
+.popup button{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    border-radius: 15px;
+    border: none;
+}
+.popup button:hover{
+    background: rgb(142, 0, 24);
+    color: white;
+}
+.popContainer button{
+    color: red;
+    background: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 15px;
+    border-radius: 15px;
+    border: none;
+    margin: 10px;
+}
+.popContainer button:hover{
+    background: rgb(142, 0, 24);
+    color: rgb(255, 255, 255);
+}
+
+.popupRounds{
+    border-radius: 30px;
+    text-align: center;
+    width: 400px;
+    background: #b2d2ff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1); 
+    padding: 0 20px 20px;
+    color: #333;
+    z-index: 99;
+    box-shadow: 5px 5px 5px rgba(58, 58, 58, 0.5);
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+
+}
+
+.open-popupRounds{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.body{
+    background: #ffffff80;
+    margin: 0 50px;
+    color: rgb(0, 38, 109);
+    text-align: center;
+    border-radius: 30px;
+
+}
+.playground{
+    display: flex;
+    justify-content: center;
+}
+.playground img{
+    height:300px;
+}
+.playground .part1 img{
+    animation: float 2s ease-in-out infinite
+}
+.playground .part2 img{
+    animation: float 2.2s ease-in-out infinite
+}
+@keyframes float{
+    50%{
+        transform: translateY(40px);
+    }
+}
