@@ -159,3 +159,6 @@ function userChoice(){
 };
 
 
+function refreshing(){
+    location.reload()
+}
